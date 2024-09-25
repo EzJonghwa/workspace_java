@@ -1,0 +1,33 @@
+package ch16_network;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+/**
+ * Class Name	: FileServer
+ * Author		: 202-2
+ * Created Date : 2024. 9. 13.
+ * Version		: 1.0
+ * Purpose		: socket 통신
+ * Description	: 파일을 받는 서버
+ */
+public class FileServer {
+
+	public static void main(String[] args) {
+		int port =5000;
+		
+		try {
+			ServerSocket serverSocket = new ServerSocket(port);
+			System.out.println("서버가 포트 : "+ port +"에서 실행중...");
+			
+			Socket socket = serverSocket.accept();
+			System.out.println("클라이언트 연결됨.");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

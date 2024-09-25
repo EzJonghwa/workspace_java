@@ -1,0 +1,26 @@
+package ch16_network;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class FileClient {
+
+	public static void main(String[] args) {
+		String host = "localhost";
+		int port =5000;
+		
+		try {
+			Socket Socket = new Socket(host,port);
+			System.out.println("서버에 연결됨.");
+
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println();
+
+
+	}
+}

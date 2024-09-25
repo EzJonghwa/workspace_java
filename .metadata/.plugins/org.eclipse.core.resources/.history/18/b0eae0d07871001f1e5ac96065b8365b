@@ -1,0 +1,5 @@
+package ch16_network.chat;
+
+public class RecieveThread {
+
+}
